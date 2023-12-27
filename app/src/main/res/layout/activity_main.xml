@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/app_background"
+    android:padding="16dp"
+    >
+
+    <EditText
+        android:layout_marginTop="8dp"
+        android:id="@+id/etTitle"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/white"
+        android:hint="Titre de la tâche"
+        />
+
+    <EditText
+        android:layout_marginTop="4dp"
+        android:id="@+id/etDescription"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/white"
+        android:hint="Description"
+        />
+<TextView
+    android:layout_marginTop="10dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Date Limite"
+    android:textColor="@color/white"
+    android:layout_gravity="center"
+    android:textSize="21dp"/>
+
+    <DatePicker
+        android:layout_marginTop="14dp"
+        android:id="@+id/dpDate"
+        android:layout_width="wrap_content"
+        android:layout_height="323dp"
+        android:layout_gravity="center"
+    />
+
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:id="@+id/btnAddTask1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Ajouter la tâche"
+        android:onClick="onAddTaskClick"
+        />
+    <Button
+        android:layout_marginTop="10dp"
+        android:id="@+id/NbrTasks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Nombre des tâches"
+        android:onClick="onCountTasks"
+        />
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:id="@+id/btnConsulter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Consulter les tâches"
+        android:onClick="onConsultTasks"
+        />
+
+
+</LinearLayout>
